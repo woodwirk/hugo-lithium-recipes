@@ -10,6 +10,8 @@
     <span class="article-date">{{ .Date.Format "2006-01-02" }}</span>
     {{ end }}
 
+    <div class="recipe-content">
+
     <!-- Include an ingredients list if provided -->
     {{ if .Params.ingredients }}
     <div class="sidebar">
@@ -67,6 +69,8 @@
     
     <div class="article-content">
       {{ .Content }}
+    </div>
+
     </div>
   </article>
 

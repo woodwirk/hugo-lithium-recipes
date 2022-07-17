@@ -18,7 +18,7 @@
     {{ $pages = .Site.RegularPages }}
     {{ end }}
     {{ range (where $pages "Section" "!=" "").GroupBy "Section" }}
-    <h2 class="archive-title">{{ .Key }}</h2>
+    <h2 class="archive-title">{{ title .Key }}</h2>
     {{ range .Pages.ByTitle }}
     <article class="archive-item">
       <a href="{{ .RelPermalink }}" class="archive-item-link">{{ .Title }}</a>
