@@ -1,0 +1,25 @@
+{
+    "Recipe Front Matter": {
+        "prefix": "recipe-yaml",
+        "body": [
+            "---",
+            "title: ${TM_CURRENT_LINE}",
+            "slug: ${TM_CURRENT_LINE/[^0-9^a-z-_]//gi}",
+            "tags:",
+            "  - ",
+            "servings: ",
+            "ingredients:",
+            "  component:",
+            "  - ingredient: amount",
+            "refs:",
+            "  - ",
+            "origin: person/place",
+            "date: '$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE'",
+            "made:",
+            "  - ",
+            "---",
+            "\n"
+        ],
+        "description": "Recipe Front Matter (YAML). Put your cursor at the start of the first line before use."
+    }
+}

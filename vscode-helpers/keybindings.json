@@ -1,0 +1,11 @@
+[
+    {
+        "key": "ctrl+shift+space r",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "langId": "markdown",
+            "name": "Recipe Front Matter"
+        }
+    }
+]
